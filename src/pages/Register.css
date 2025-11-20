@@ -1,0 +1,229 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+  background: url("https://img.freepik.com/free-vector/e-learning-education-template-vector-technology-ad-banner_53876-125996.jpg?semt=ais_incoming&w=740&q=80");
+  background-size: cover;
+}
+
+/* Animated floating circles */
+.bg-bubble {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(45px);
+  opacity: 0.5;
+  animation: float 8s infinite ease-in-out alternate;
+}
+
+.b1 {
+  width: 280px;
+  height: 280px;
+  background: #6366f1;
+  top: 10%;
+  left: 5%;
+}
+
+.b2 {
+  width: 350px;
+  height: 350px;
+  background: #ec4899;
+  bottom: 5%;
+  right: 10%;
+  animation-duration: 10s;
+}
+
+/* Bubble animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  100% {
+    transform: translateY(-40px) translateX(40px);
+  }
+}
+
+/* -------------------------------------------
+   CARD WRAPPER
+------------------------------------------- */
+.register-card {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(18px);
+  padding: 40px 32px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+  animation: fadeUp 0.8s ease-out;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------------------------------------------
+   TITLE
+------------------------------------------- */
+.register-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.register-subtext {
+  text-align: center;
+  color: #dbeafe;
+  margin-bottom: 28px;
+  font-size: 15px;
+}
+
+/* -------------------------------------------
+   FORM
+------------------------------------------- */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Labels */
+.register-label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+  color: #e2e8f0;
+}
+
+/* Input wrapper */
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Icons inside inputs */
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.75;
+}
+
+/* Inputs */
+.register-input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px 16px;
+  padding-left: 44px; /* space for the left icon */
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  outline: none;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.register-input::placeholder {
+  color: #cbd5e1;
+}
+
+.register-input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.35);
+}
+
+/* Password toggle */
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 25px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dbeafe;
+}
+
+.password-toggle:hover {
+  opacity: 1;
+}
+
+/* -------------------------------------------
+   BUTTON
+------------------------------------------- */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.4);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.register-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* -------------------------------------------
+   ERROR MESSAGE
+------------------------------------------- */
+.error-message {
+  color: #fecaca;
+  text-align: center;
+  font-size: 14px;
+  margin-top: -8px;
+}
+
+/* -------------------------------------------
+   FOOTER LINK
+------------------------------------------- */
+.register-footer {
+  text-align: center;
+  margin-top: 22px;
+  color: #dbeafe;
+}
+
+.register-footer a {
+  color: #93c5fd;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.register-footer a:hover {
+  opacity: 0.8;
+}

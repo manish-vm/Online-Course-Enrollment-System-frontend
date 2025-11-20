@@ -1,0 +1,141 @@
+/* Page Background */
+.login-page1 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: url("https://cdn.elearningindustry.com/wp-content/uploads/2021/08/Top-5-Benefits-Of-eLearning-Education.png");
+  background-size: cover;
+}
+
+/* Glassmorphic Login Card */
+.login-box1 {
+  width: 100%;
+  max-width: 420px;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.login-title1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+/* Subtitle */
+.login-subtitle1 {
+  text-align: center;
+  color: #d1d5db;
+  margin-bottom: 24px;
+}
+
+/* Form Styles */
+.login-form1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label1 {
+  color: white;
+  font-size: 14px;
+}
+
+.input-field1 {
+  margin-top: 6px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  outline: none;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.input-field1::placeholder {
+  color: rgba(240, 240, 240, 0.8);
+}
+
+.input-field1:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5);
+}
+
+/* Password input + eye icon */
+.password-wrapper1 {
+  position: relative;
+  width: 100%;
+}
+
+.password-input1 {
+  width: 100%;
+  padding-right: 40px !important; /* space for eye icon */
+}
+
+.eye-btn1 {
+  position: absolute;
+  right: 12px;
+  top: 27px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #3f3f3f;
+}
+
+.eye-btn1:hover {
+  color: #ffffff;
+}
+
+/* Error text */
+.error-text1 {
+  color: #fecaca;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Login Button */
+.login-btn1 {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(37, 99, 235, 0.8);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  backdrop-filter: blur(6px);
+}
+
+.login-btn1:hover {
+  background: rgba(30, 64, 175, 0.85);
+}
+
+/* Bottom Register Link */
+.register-text1 {
+  margin-top: 20px;
+  text-align: center;
+  color: #e5e7eb;
+}
+
+.register-link1 {
+  color: #93c5fd;
+  text-decoration: underline;
+}

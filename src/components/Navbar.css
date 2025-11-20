@@ -1,0 +1,150 @@
+/* NAVBAR MAIN */
+.navbar-container {
+  width: 100%;
+  background: #16223e;
+  padding: 14px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.navbar-content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.navbar-logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* NAV LINKS */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* Animated underline */
+.underline-anim {
+  position: relative;
+  color: #cfd8ff;
+  font-size: 17px;
+  text-decoration: none;
+  padding-bottom: 2px;
+  transition: color 0.3s ease;
+}
+
+.underline-anim::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.underline-anim:hover {
+  color: #ffffff;
+}
+
+.underline-anim:hover::after {
+  width: 100%;
+}
+
+/* BUTTONS */
+.nav-btn,
+.nav-btn-outline {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-btn {
+  background: #4169e1;
+  color: white;
+}
+
+.nav-btn:hover {
+  background: #3154b8;
+}
+
+.nav-btn-outline {
+  border: 1px solid white;
+  color: white;
+}
+
+.nav-btn-outline:hover {
+  background: white;
+  color: #0a0f29;
+}
+
+.logout-btn {
+  background: #d9534f;
+}
+
+.logout-btn:hover {
+  background: #b9443f;
+}
+
+/* AVATAR */
+.avatar {
+  width: 38px;
+  height: 38px;
+  background: #4a67f5;
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* MOBILE MENU BUTTON */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILE RESPONSIVE MODE */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    width: 200px;
+    padding: 100px;
+    background: #0a0f29;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+}
