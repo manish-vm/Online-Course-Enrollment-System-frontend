@@ -1,4 +1,3 @@
-// frontend/src/context/EnrollmentContext.jsx
 import React, {
   createContext,
   useContext,

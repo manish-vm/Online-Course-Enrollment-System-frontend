@@ -1,6 +1,6 @@
 import React from "react";
 import { useEnrollment } from "../context/EnrollmentContext";
-import "./MyEnrollments.css"; // optional if you have styles
+import "./MyEnrollments.css"; 
 
 export default function MyEnrollments() {
   const { enrollments, loading, error } = useEnrollment();

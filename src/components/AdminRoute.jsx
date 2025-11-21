@@ -1,4 +1,3 @@
-// admin/src/components/AdminRoute.jsx
 import React, { useContext } from "react";
 import { Navigate, Outlet } from "react-router-dom";
 import { AdminAuthContext } from "../context/AdminAuthContext";
